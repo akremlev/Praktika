@@ -3,7 +3,31 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="61,70,0,0" VerticalAlignment="Top" Width="238" Height="129"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFF3FF02" Offset="0.36"/>
+                <GradientStop Color="#FF002EFF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button Content="Закрыть" HorizontalAlignment="Left" Margin="61,70,0,0" VerticalAlignment="Top" Width="238" Height="129" FontSize="48" FontWeight="Bold" Click="Button_Click">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF1700" Offset="0"/>
+                    <GradientStop Color="#FF00EACA" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="12" ShadowDepth="12" Color="#FF005DFF"/>
+            </Button.Effect>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FF46FF00"/>
+                    <GradientStop Color="#FFFF9E9E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>
